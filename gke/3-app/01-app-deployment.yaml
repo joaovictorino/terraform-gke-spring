@@ -21,7 +21,7 @@ spec:
         app: app
     spec:
       containers:
-        - image: us-east1-docker.pkg.dev/teste-sample-388301/ar-aula-spring/springapp:latest
+        - image: us-east1-docker.pkg.dev/teste-sample-388301/ar-aula-spring/springapp
           imagePullPolicy: Always
           name: backend
           env:
