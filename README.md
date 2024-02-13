@@ -32,26 +32,26 @@ docker build -t springapp .
 Taggear a imagem com latest
 
 ```sh
-docker tag springapp:latest us-central1-docker.pkg.dev/teste-sample-388301/ar-aula-spring/springapp:latest
+docker tag springapp:latest us-east1-docker.pkg.dev/teste-sample-388301/ar-aula-spring/springapp:latest
 ```
 
 Login no repositorio de imagem do Artifact Registry (privado)
 
 ```sh
-gcloud auth configure-docker us-central1-docker.pkg.dev
+gcloud auth configure-docker us-east1-docker.pkg.dev
 ```
 
 Subir imagem
 
 ```sh
-docker push us-central1-docker.pkg.dev/teste-sample-388301/ar-aula-spring/springapp:latest
+docker push us-east1-docker.pkg.dev/teste-sample-388301/ar-aula-spring/springapp:latest
 ```
 
 Obter credenciais do GKE
 
 ```sh
 sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin
-gcloud container clusters get-credentials  gke-aula-infra --region us-central1
+gcloud container clusters get-credentials  gke-aula-infra --region us-east1
 ```
 
 Subir configuração da aplicação

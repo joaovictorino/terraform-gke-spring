@@ -82,6 +82,6 @@ resource "google_artifact_registry_repository_iam_binding" "binding" {
   repository = google_artifact_registry_repository.ar-aula-spring.name
   role       = "roles/artifactregistry.reader"
   members = [
-    google_service_account.default.email,
+    "serviceAccount:${google_service_account.default.email}",
   ]
 }
