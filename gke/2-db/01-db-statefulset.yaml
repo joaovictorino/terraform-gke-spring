@@ -63,6 +63,7 @@ spec:
         namespace: aulainfra
       spec:
         accessModes: ["ReadWriteOnce"]
+        storageClassName: standard
         resources:
           requests:
             storage: 10Gi
